@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="35x35" href="./assets/images/logo.png">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;family=Sora:wght@100..800&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTS - CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Eagles Tech Textbook Series</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container py-3">
+            <a href="index.html" class="nav-brand">Eagles <span>Tech</span></a>
+            <div class="d-flex align-items-center">
+                <li class="nav-item mx-auto d-block d-lg-none">
+                    <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-count"></span></span>
+                </li>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ps-3">
+                        <a href="#textbooks" class="nav-link fw-semibold">Explore</a>
+                    </li>
+                    <li class="nav-item ps-3">
+                        <a href="#how-it-works" class="nav-link fw-semibold">How it Works</a>
+                    </li>
+                    <li class="nav-item ps-3">
+                        <a href="#product-wrapper" class="nav-link fw-semibold">Pricing</a>
+                    </li>
+                    <li class="nav-item ps-3">
+                        <a href="#novel" class="nav-link fw-semibold">Novels</a>
+                    </li>
+                    <li><a href="#product-wrapper" class="btn d-block ps-3">Shop Now</a></li>
+
+                    <li class="nav-item ps-3 d-none d-lg-block">
+                        <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-count"></span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- END -->
+    <main>
+        <!-- hero-section -->
+        <section class="hero-section py-5">
+            <div class="container pt-lg-5">
+                <div class="row pt-3 pt-lg-5 g-4">
+                    <div class="col-lg-7 col-md-12 pt-md-5 ">
+                        <div class="hero-content py-5 text-center text-md-start px-md-3">
+                            <h1 class="hero-title pb-3">Africa's Tech Future Begins in the Classroom</h1>
+                            <em class="hero-label d-block pb-4">Empowering the next generation of African
+                                innovators</em>
+                            <p class="hero-text pb-4">
+                                The Eagles Tech Textbook Series equips students with cutting-edge knowledge in AI and
+                                Robotics, preparing them for the technological revolution shaping Africa's future.
+                            </p>
+                            <a href="#textbooks" class="cta-btn mb-3">Explore Our Textbooks</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="hero-image"><img src="./assets/images/hero.jpg" alt="hero-image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- eagles__textbooks -->
+        <section class="eagles_textbook py-5" id="textbooks">
+            <div class="main_container py-5">
+                <div class="row">
+                    <div class="col-lg-6 px-2 py-1 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <em class="subtitle">Our Textbooks</em>
+                            <h2 class="section_header text-center pb-2">Why Eagles Tech Textbooks?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 g-md-5">
+                    <div class="col-md-6">
+                        <div class="image mt-0 mt-md-5">
+                            <img src="./assets/images/hero1.jpg" alt="textbook collections" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h3 class="section_label pb-2 pb-md-4">Designed for Africa's Future</h3>
+                            <p>
+                                Our textbooks are specifically crafted to prepare African students for the rapidly
+                                evolving technological landscape.
+                                With locally relevant examples and practical applications, we're building the
+                                foundation
+                                for Africa's tech revolution.
+                            </p>
+
+                            <ul class="navbar-nav pt-3">
+                                <li class="nav-item d-flex gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                        <path
+                                            d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z" />
+                                    </svg>
+
+                                    <p>
+                                        <strong>Curriculum-Aligned: </strong> Designed to complement national
+                                        education standards.
+                                    </p>
+                                </li>
+
+                                <li class="nav-item d-flex gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                        <path
+                                            d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z" />
+                                    </svg>
+
+                                    <p>
+                                        <strong>Practical Learning: </strong> Hands-on projects that develop
+                                        real-world skills.
+                                    </p>
+                                </li>
+
+                                <li class="nav-item d-flex gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                        <path
+                                            d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z" />
+                                    </svg>
+
+                                    <p>
+                                        <strong>African Context: </strong> Case studies and examples relevant to
+                                        African students.
+                                    </p>
+                                </li>
+
+                                <li class="nav-item d-flex gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                        <path
+                                            d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z" />
+                                    </svg>
+
+                                    <p>
+                                        <strong>Expert Authors: </strong> Created by African tech educators.
+                                    </p>
+                                </li>
+
+                                <li class="nav-item d-flex gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+                                        <path
+                                            d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z" />
+                                    </svg>
+
+                                    <p>
+                                        <strong>Future-Ready: </strong> Focus on AI, robotics, and emerging
+                                        technologies.
+                                    </p>
+                                </li>
+                            </ul>
+                            <a href="#product-wrapper" class="cta-btn mt-3">Browse Our Series</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- Robotic_kits_section -->
+        <section class="robotic_kits py-5">
+            <div class="container py-5">
+                <div class="row ">
+                    <div class="col-lg-6 px-2 pb-5 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <em class="subtitle">Hands-On Learning for Future Innovators</em>
+                            <h2 class="section_header text-center pb-2">Unlock the Future with Our AI & Robotics Kits.
+                            </h2>
+                            <p class="desc">Take learning beyond the textbook. Our beginner-to-advanced kits give
+                                students the tools to build, code, and bring their
+                                own smart technology to life.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <div class="robotic-img">
+                            <img src="./assets/images/Ai_robotic_kits.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <div class="robotic-content">
+                            <h3 class="pb-2">Features Highlights:</h3>
+                            <ul class="navbar-nav">
+                                <li class="nav-item d-flex align-items-start gap-3 pb-3"><span>🛠️</span> Built for
+                                    Real-World Skills: Move past theory. Every kit offers practical experience in
+                                    coding, electronics, and mechanical assembly.</li>
+                                <li class="nav-item d-flex align-items-start gap-3 pb-3"><span>🧠</span> Step-by-Step
+                                    Project Guides: No prior coding experience? No problem. Each kit comes with clear,
+                                    kid- and student-friendly manuals to guide them from build to launch.</li>
+                                <li class="nav-item d-flex align-items-start gap-3 pb-3"><span>🚀</span> From Beginner
+                                    to Advanced: Tailored kits for every age group—from basic sensor circuits for young
+                                    learners to programmable AI modules for high schoolers.</li>
+                            </ul>
+                            <a href="#" class="cta-btn mt-3">Browse All Kits & Pricing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- extended_reality_section -->
+        <section class="extended_reality_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 px-0 py-1 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <h2 class="section_header text-center pb-2">Eagles Extended Reality.</h2>
+                            <p class="py-2 desc">
+                                Bridging theory and practice. Eagles Extended Reality (EXR) pairs our AI / robotics
+                                textbooks and hardware kits with immersive 3D, AR, and VR learning modules.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 pb-5">
+                    <div class="extended_reality-card col-6 col-lg-3 col-md-6 col-12">
+                        <span class="extended_reality-num rounded-circle">1</span>
+
+                        <h5>AI Visualizer</h5>
+                        <p>Sign up in 30 seconds. Set up your first project and invite your team with one link.</p>
+                    </div>
+
+                    <div class="extended_reality-card col-6 col-lg-3 col-md-6 col-12">
+                        <span class="extended_reality-num rounded-circle">2</span>
+
+                        <h5>Virtual Robotics Lab</h5>
+                        <p>Test code and simulate robot movements in safe, physics-enabled virtual arenas.</p>
+                    </div>
+
+                    <div class="extended_reality-card col-6 col-lg-3 col-md-6 col-12">
+                        <span class="extended_reality-num rounded-circle">3</span>
+
+                        <h5>RoboSim VR</h5>
+                        <p>Build and stress-test autonomous rovers and robotic arms virtually.</p>
+                    </div>
+
+                    <div class="extended_reality-card col-6 col-lg-3 col-md-6 col-12">
+                        <span class="extended_reality-num rounded-circle">4</span>
+
+                        <h5>Interactive 3D Hardware</h5>
+                        <p>Inspect and rotate robotics components and circuit layouts down to the
+                            micro-level.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- eagles_smart_screen -->
+        <section class="eagles_smart_screen py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <em class="subtitle">Eagles Smart screen</em>
+                            <h2 class="section_header text-center pb-2">The Ultimate Interactive Hub for Modern
+                                Classrooms and Labs</h2>
+                            <p class="py-2 desc">
+                                Built specifically for AI labs, robotics workshops, and modern classrooms, it turns
+                                complex coding, circuit diagrams, virtual simulation into an engaging, multi-touch
+                                visual experince.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-5 g-5 d-flex">
+
+                    <div class="col-md-6 pt-0 pt-lg-3 d-flex order-2 ">
+                        <div class="">
+                            <ul class="navbar-nav">
+                                <li class="nav-item  pb-3"><strong>Ultra HD
+                                        Multi-Touch Display:</strong> Write, draw, and manipulate 3D robotics models
+                                    smoothly with ultra-low latency stylus and
+                                    touch support.</li>
+                                <li class="nav-item pb-3"><strong>Seamless EXR
+                                        Integration:</strong> Connect directly with Eagles Extended Reality (EXR) to
+                                    project immersive AI neural networks
+                                    and 3D hardware schematics for the whole class to see.</li>
+                                <li class="nav-item  pb-3"><strong>Wireless Screen
+                                        Sharing:</strong> Instantly cast code, project debugging logs, and student
+                                    device screens from laptops, tablets,
+                                    or phones.</li>
+                                <li class="nav-item  pb-3 d-md-none d-lg-block"><strong>Built-in
+                                        Collaboration Tools:</strong> Perfect for group brainstorming, remote
+                                    learning sessions, and live coding workshops.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex order-1  pt-0 ">
+                        <div class="smart_screen_img pt-0 pt-md-">
+                            <img src="./assets/images/smart_screen2.jpeg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- Eagles_robotics_lab_establishment -->
+        <section class="eagles_robotics_lab_establishment py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <em class="subtitle">Robotics Lab Establishment</em>
+                            <h2 class="section_header text-center pb-2">Turn Any Room into a World-Class STEM &
+                                Innovation Hub.</h2>
+                            <p class="py-2 desc">
+                                Eagles Tech designs, equips, and sets up state-of-the-art <b>AI and Robotics
+                                    Labs</b> for schools,
+                                universities, and training
+                                centers. We handle everything from hardware and software integration to curriculum
+                                deployment and teacher onboarding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4 g-4 ">
+
+                    <div class=" col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="card-title">What We Provide</div>
+                                <ul class="navbar-nav">
+                                    <li class="pb-2">
+                                        <strong>Turnkey Infrastructure:</strong> High-performance workstations,
+                                        <strong>Eagles Smart Screens</strong>, safety gear, and modular laboratory
+                                        furniture.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Hardware & Robotics Kits:</strong> Complete sets of microcontrollers,
+                                        sensors, autonomous rover kits, robotic arms, and IoT
+                                        development boards.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Curriculum & Courseware:</strong> Grade-appropriate AI, Python coding,
+                                        and robotics modules paired with Eagles Tech textbooks
+                                        and interactive guides.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Teacher Training & Certification:</strong> Comprehensive workshops to
+                                        empower educators with the technical skills to run and
+                                        maintain the lab effortlessly.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-6 col-sm-12  pt-md-5 pt-sm-0">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="card-title">Establishment Process in 4 Steps</div>
+                                <ul class="navbar-nav">
+                                    <li class="pb-2">
+                                        <strong>Space & Needs Assessment:</strong> We analyze your school's space,
+                                        budget,
+                                        and learning objectives.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Lab Design & Setup:</strong> Installation of hardware, Smart Screens,
+                                        networks, and safety infrastructure.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Software & Curriculum Deployment:</strong> Loading EXR simulation
+                                        software,
+                                        AI platforms, and learning portals.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Educator Onboarding:</strong> Hands-on training for staff and full
+                                        operational launch support.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- health_simulation -->
+        <section class="health_simulation py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <em class="subtitle">health simulation</em>
+                            <h2 class="section_header text-center pb-2">Immersive Biomedical & Healthcare Traininig</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 px-md-0">
+                                <p class="pb-2 pt-5 desc text-center">
+                                    Bring advanced medical technology into classrooms. <b>Eagles Health Simulation</b>
+                                    integrates AI
+                                    diagnostics, biomedical robotics, and Extended Reality (AR/VR) to train the next
+                                    generation of healthcare
+                                    professionals and biomedical engineers.
+                                </p>
+
+                                <ul class=" ps-5">
+                                    <li class="pb-2">
+                                        <strong>AR Anatomy & Physiology:</strong> Explore interactive 3D human organ
+                                        systems and cellular structures
+                                        using Eagles EXR.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Biomedical Robotics:</strong> Program and simulate robotic surgical
+                                        tools and prosthetic mechanics in a
+                                        risk-free environment.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>AI Diagnotics Simulator:</strong> Train machine learning models to
+                                        analyze medical scans and track vital
+                                        signs.
+                                    </li>
+                                    <li class="pb-2">
+                                        <strong>Smart Screen Collaboration:</strong> Display patient case studies and
+                                        live simulation data on the
+                                        <b>Eagles Smart Screen</b> for group learning.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- novel section -->
+        <section class="novel-section py-5" id="novel">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <em class="subtitle">Our Novel</em>
+                            <h2 class="section_header text-center pb-2">Eagles Tech Novels.</h2>
+                            <p class="py-2 desc">
+                                Our carefully designed technology storybooks make learning fun, relatable, and inspiring
+                                for young minds. Through
+                                engaging narratives, students explore the world of AI and robotics, fostering
+                                creativity, critical thinking, and a
+                                passion for innovation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-md-5  g-5">
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="img-bg-design_1">
+                            <div class="novel-img novel-img_1 mt-0 mt-md-3 ">
+                                <img src="./assets/images/novel1.jpg" alt="Robot Helper" class="img-fluid">
+                            </div>
+
+                            <div class="circle-design d-flex align-items-center gap-2">
+                                <span class="circle yellow"></span>
+                                <span class="circle orange"></span>
+                                <span class="circle blue"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-6 col-sm-12 d-flex flex-column justify-content-center">
+                        <div class="pb-3 pb-md-0">
+                            <h3 class="pb-3">Eagles Tech Novels Primary School Edition</h3>
+
+                            <ul>
+                                <li>Engaging stories and colorful illustrations</li>
+                                <li>Simple explanations of digital concepts Character-building and moral lessons</li>
+                                <li>Early exposure to innovation and technology</li>
+                                <li>Curiosity-driven STEM learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-md-5 g-lg-0 g-md-5 g-sm-3">
+                    <div class="col-lg-7 col-md-6 col-sm-12 pt-5">
+                        <div class="img-bg-design_2">
+                            <div class="novel-img novel-img_2 mt-0 mt-md-3 ">
+                                <img src="./assets/images/novel2.jpg" alt="Robot Helper" class="img-fluid">
+                            </div>
+                            <div class="novel-img novel-img_3 mt-0 mt-md-3 ">
+                                <img src="./assets/images/novel3.jpg" alt="Robot Helper" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-12 pt-5 d-flex flex-column">
+                        <div class="pb-3 pb-md-0">
+                            <h3 class="pb-3">Eagles Tech Storybooks Secondary School Edition</h3>
+                            <ul>
+                                <li>AI and Robotics-themed adventures</li>
+                                <li>Real-world technology applications</li>
+                                <li>Critical thinking development</li>
+                                <li>Problem-solving scenarios</li>
+                                <li>Innovation and entrepreneurship inspiration</li>
+                                <li>Career awareness in STEM fields</li>
+                                <li>Students gain a deeper understanding of emerging technologies while developing
+                                    creativity, leadership qualities,
+                                    and
+                                    future career</li>
+                            </ul>
+                            <div
+                                class="circle-design2 d-flex align-items-center gap-2 justify-content-center mx-auto pt-5">
+                                <span class="circle yellow"></span>
+                                <span class="circle orange"></span>
+                                <span class="circle blue"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- bible_base_AI_robotics_manual -->
+         <section class="bible_base_manual py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <em class="subtitle">bible  manual</em>
+                            <h2 class="section_header text-center pb-2">Bible-Base AI & Robotics Manual</h2>
+                            <p class="py-2 desc">
+                                Integrating faith, ethics & innovation in STEM.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p>Discover how cutting-edge technology aligns with timeless biblical principles. The <b>Eagles Tech Bible-Based AI & Robotics Manual</b>  guides students through building robots and programming artificial intelligence while exploring ethical  stewardship, purpose, and Christian values in modern engineering.</p>
+
+                <div class="row pt-4 g-4">
+                    <div class="col-md-6">
+                        <div class="card  p-4">
+                            <h3>Faith & Ethical Integration:</h3>
+                            <ul class="navbar-nav">
+                                <li>Devotional and thought-provoking reflections pairing tech concepts with biblical stewardship, wisdom, and responsibility.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card  p-4">
+                            <h3>Hands-on Engineering Projects:</h3>
+                            <ul class="navbar-nav">
+                                <li>Step-by-step guides for building robotics kits and AI models grounded in solving real-world  community problems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card  p-4">
+                            <h3>Interactive AR Schematics:</h3>
+                            <ul class="navbar-nav">
+                                <li>Scan manual pages using <b>Eagles EXR</b> to view 3D hardware assembly guides, circuit pathways, and code logic</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card  p-4">
+                            <h3>Classroom & Sunday School Ready:</h3>
+                            <ul class="navbar-nav">
+                                <li>Perfect for Christian schools, homeschool groups, and faith-based STEM camps.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- end -->
+
+        <!-- product-wrapper -->
+        <section class="product-wrapper py-5" id="product-wrapper">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-12 px-0 py-1">
+                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="logo pb-4"><img src="./assets/images/logo.png" alt="logo"></div>
+                            <h2 class="section_header text-center pb-2">Eagles Tech Textbook Series</h2>
+                            <p>AI & Robotics Education for Tomorrow's Africa</p>
+                            <form method="post">
+                                <input type="search" name="search" id="search"
+                                    placeholder="Search books by title, author, or description..." class="  mb-3">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-row row g-3 justify-content-center" id="products">
+                    <!-- product-items will appear here -->
+                </div>
+
+                <div class="overlay" id="popUp">
+                    <aside class="cart-wrapper p-4">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2>Your Cart (<span class="cart-count">0</span>)</h2>
+                            <button class="action-btn closeBtn" id="close-popUp"><i class="bi bi-x"></i></button>
+                        </div>
+
+
+                        <div id="empty-cart" class="empty-cart text-center pt-3">
+                            <img src="./assets/images/illustration-empty-cart.svg" alt="Empty Cart">
+                            <p>Your added items will appear here</p>
+                        </div>
+
+                        <div class="cart-summary " id="cart-summary">
+                            <div class="cart-items " id="cart-items">
+                                <!-- added items will appear here -->
+                            </div>
+
+                            <div class="total-order pt-4">
+                                <span class="d-flex align-items-center justify-content-between">
+                                    <p>Subtotal:</p>
+
+                                    <p>₦<span class="grand-total">55.00</span></p>
+                                </span>
+
+                                <p class=" d-flex align-items-center justify-content-between">
+                                    <span>Shipping</span>
+                                    <span>Free</span>
+                                </p>
+
+                                <span class="d-flex align-items-center  gap-4">
+                                    <h2>Total: <strong> ₦<span class="grand-total">55.00</span></strong></h2>
+
+                                </span>
+
+                            </div>
+
+
+                            <button class="order-button d-block mt-4 text-center" id="placeOrderBtn">
+                                Place Order via WhatsApp
+                            </button>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="cart-briefing text-center py-3 px-4 shadow" id="cart-briefing">
+                    <h2>Cart Total</h2>
+                    <h3 class="product-price pb-2 d-block">₦<span class="grand-total">7000.00</span></h3>
+                    <h2 class="h2"><span class="cart-count" id="cart-count">0</span> Item</h2>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <script src="./assets/js/earihub.js"></script>
+</body>
+
+</html>
