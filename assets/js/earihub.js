@@ -142,13 +142,13 @@ function getProductButton(index) {
   return `
         <div class="quantity-controls mt-3">
                 <button class="action-btn decrement-btn" onclick="decreaseItem(${index})">
-                        <img src="./images/icon-decrement-quantity.svg" alt="">
+                        <img src="./assets/images/icon-decrement-quantity.svg" alt="">
                 </button>
 
                     <span>${item.quantity}</span>
 
                  <button class="action-btn increment-btn" onclick="increaseItem(${index})">
-                        <img src="./images/icon-increment-quantity.svg" alt="">
+                        <img src="./assets/images/icon-increment-quantity.svg" alt="">
                 </button>
         </div>
   `;
