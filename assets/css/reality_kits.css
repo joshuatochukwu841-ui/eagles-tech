@@ -1,0 +1,37 @@
+/* hero-section */
+.hero-section .cta-btn{
+    box-shadow: var(--bs-box-shadow);
+}
+.hero-section .demo-btn{
+    border: 2px solid var(--border);
+    background: transparent;
+    color: var(--border);
+}
+/* end */
+
+ /* extended_reality_section */
+ .extended_reality_section {
+     background: var(--light-gray);
+ }
+
+.extended_reality_section .reality-card{
+    border: 1px solid var(--input);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.extended_reality_section .reality-card:hover{
+    box-shadow: var(--bs-box-shadow);
+}
+
+ .reality-card h5 {
+     font-size: 16px;
+     font-weight: 700;
+     font-family: var(--space-grotesk);
+ }
+
+ .reality-card p {
+     font-size: 14px;
+     font-weight: 500;
+ }
+
+ /* end */

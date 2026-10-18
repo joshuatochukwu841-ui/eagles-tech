@@ -1,0 +1,8 @@
+h4{
+    color: black;
+}
+
+ .health_simulation .health_sim_img img {
+     height: 350px;
+     border-radius: var(--radius);
+ }

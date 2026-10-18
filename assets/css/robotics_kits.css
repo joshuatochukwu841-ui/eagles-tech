@@ -1,0 +1,51 @@
+/* hero-section */
+.hero-section p{
+    font-size: 18px;
+}
+/* end */
+
+/* navigation-col */
+.navigation-col {
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: 500;
+    color: var(--gray-text);
+}
+
+.navigation-col .home {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.navigation-col .current_page{
+    color: var(--muted-foreground);
+}
+/* end */
+
+/* page_overview */
+.page_overview h2 span{
+    display: block;
+    border: 2px solid var(--border);
+    width: 30%;
+    border-radius: 2px;
+}
+/* end */
+
+/* robotic_kits */
+p{
+    font-family: var(--inter);
+}
+
+.robotic_kits .list-design{
+    /* display: inline-flex; */
+    margin-top: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+}
+
+.robotic_kits .robotic-content .cta-btn{
+    background: var(--border);
+    color: #fff;
+}

@@ -1,3 +1,4 @@
+// PRODUCT  SECTION
 const productRow = document.getElementById("products");
 const popUpModal = document.getElementById("popUp");
 const closeModal = document.getElementById("close-popUp");
@@ -8,6 +9,15 @@ const cartItems = document.getElementById("cart-items");
 const grandTotal = document.querySelectorAll(".grand-total");
 const orderBtn = document.getElementById("placeOrderBtn");
 const cartBriefing = document.getElementById("cart-briefing");
+const hasStoreUi = Boolean(
+  productRow &&
+  popUpModal &&
+  closeModal &&
+  emptyCart &&
+  cartSummary &&
+  cartItems &&
+  orderBtn,
+);
 
 console.log(
   productRow,
@@ -21,11 +31,13 @@ console.log(
 
 // array of cart items
 let cart = [];
+let searchTerm = "";
 
 // array of products
 const loadProducts = [
   {
-    image: "./assets/images/TBookPri1(1).jpg",
+    id: 1,
+    image: "../images/TBookPri1(1).jpg",
     name: "AI & Robotics - Primary 1",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Primary 1 (Basic One)",
@@ -33,7 +45,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookPri2.jpg",
+    id: 2,
+    image: "../images/TBookPri2.jpg",
     name: "AI & Robotics - Primary 2",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Primary 2 (Basic Two)",
@@ -41,7 +54,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookPri3.jpg",
+    id: 3,
+    image: "../images/TBookPri3.jpg",
     name: "AI & Robotics - Primary 3",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Primary 3 (Basic Three)",
@@ -49,7 +63,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookPri4.jpg",
+    id: 4,
+    image: "../images/TBookPri4.jpg",
     name: "AI & Robotics - Primary 4",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Primary 4 (Basic Four)",
@@ -57,7 +72,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookPri5.jpg",
+    id: 5,
+    image: "../images/TBookPri5.jpg",
     name: "AI & Robotics - Primary 5",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Primary 5 (Basic Five)",
@@ -65,7 +81,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookPri6.jpg",
+    id: 6,
+    image: "../images/TBookPri6.jpg",
     name: "AI & Robotics - Primary 6",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Primary 6 (Basic Six)",
@@ -73,7 +90,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookJss1.jpg",
+    id: 7,
+    image: "../images/TBookJss1.jpg",
     name: "AI & Robotics - Junior Secondary 1",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Junior Secondary 1",
@@ -81,7 +99,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookJss2.jpg",
+    id: 8,
+    image: "../images/TBookJss2.jpg",
     name: "AI & Robotics - Junior Secondary 2",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Junior Secondary 2",
@@ -89,7 +108,8 @@ const loadProducts = [
   },
 
   {
-    image: "./assets/images/TBookJss3(1).jpg",
+    id: 9,
+    image: "../images/TBookJss3(1).jpg",
     name: "AI & Robotics - Junior Secondary 3",
     producer: "by Eagles Tech",
     text: "Artificial Intelligence and Robotics - Junior Secondary 3",
@@ -97,8 +117,11 @@ const loadProducts = [
   },
 ];
 
+
 // display products on the page
 function displayProducts() {
+  if (!productRow) return;
+
   productRow.innerHTML = loadProducts
     .map(
       (product, index) => `
@@ -121,7 +144,9 @@ function displayProducts() {
   console.log(loadProducts);
 }
 
-displayProducts()
+if (hasStoreUi) {
+  displayProducts();
+}
 
 // show either the "add to cart" or the "quantity controls"
 function getProductButton(index) {
@@ -142,13 +167,13 @@ function getProductButton(index) {
   return `
         <div class="quantity-controls mt-3">
                 <button class="action-btn decrement-btn" onclick="decreaseItem(${index})">
-                        <img src="./assets/images/icon-decrement-quantity.svg" alt="">
+                        <img src="../images/icon-decrement-quantity.svg" alt="">
                 </button>
 
                     <span>${item.quantity}</span>
 
                  <button class="action-btn increment-btn" onclick="increaseItem(${index})">
-                        <img src="./assets/images/icon-increment-quantity.svg" alt="">
+                        <img src="../images/icon-increment-quantity.svg" alt="">
                 </button>
         </div>
   `;
@@ -183,23 +208,22 @@ function increaseItem(index) {
     item.quantity++;
   }
 
-
-  updateCart()
+  updateCart();
 }
 
 // decrease products
 function decreaseItem(index) {
-   const item = cart.find((item) => item.index === index);
+  const item = cart.find((item) => item.index === index);
 
-   if (item) {
-     item.quantity--;
+  if (item) {
+    item.quantity--;
 
-     if (item.quantity <= 0) {
-      cart = cart.filter((item) => item.index != index)
-     }
-   }
+    if (item.quantity <= 0) {
+      cart = cart.filter((item) => item.index != index);
+    }
+  }
 
-   updateCart();
+  updateCart();
 }
 
 // remove item from cart
@@ -212,8 +236,10 @@ function removeItem(index) {
 
 // update cart and display products in cart
 function updateCart() {
+  if (!hasStoreUi) return;
+
   // display products on the page
-    displayProducts();
+  displayProducts();
 
   //   total number of items in the cart
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
@@ -224,10 +250,10 @@ function updateCart() {
   console.log(totalCost);
 
   // setting up the cart count and displaying it on the page
-  cartCount.forEach((item) =>{
+  cartCount.forEach((item) => {
     item.innerText = totalItems;
-  })
-  // cartCount.innerText = totalItems;
+  });
+
   grandTotal.forEach((item) => {
     item.innerHTML = totalCost.toFixed(2);
 
@@ -238,28 +264,27 @@ function updateCart() {
   if (totalItems === 0) {
     emptyCart.style.display = "block";
     cartSummary.style.display = "none";
-    cartBriefing.style.display = "none";
   } else {
     // hide empty cart message
     emptyCart.style.display = "none";
-    
+
     // display cart summary
     cartSummary.style.display = "block";
-
-    cartBriefing.style.display = "block";
+    popUpModal.classList.add("visible");
   }
 
-  cartItems.innerHTML = cart.map((item) =>{
-    const product = loadProducts[item.index];
-    console.log(product);
+  cartItems.innerHTML = cart
+    .map((item) => {
+      const product = loadProducts[item.index];
+      console.log(product);
 
-    const productQuantity = item.quantity;
-    console.log(productQuantity);
+      const productQuantity = item.quantity;
+      console.log(productQuantity);
 
-    const productTotal = product.price * productQuantity;
-    console.log(productTotal);
-    
-    return `
+      const productTotal = product.price * productQuantity;
+      console.log(productTotal);
+
+      return `
       <div class="pt-4 d-flex align-items-center justify-content-between gap-3  border-bottom pb-3">
                 <div class="cart-item">
                         <span class="cart-item-img">
@@ -277,12 +302,13 @@ function updateCart() {
             <button class="action-btn" onclick="removeItem(${item.index}) "><i class="bi bi-x"></i></button>
         </div>
     `;
-  }).join("")
-
+    })
+    .join("");
 }
 
-updateCart()
-
+if (hasStoreUi) {
+  updateCart();
+}
 
 function placeOrder() {
   // Don't allow empty orders
@@ -327,33 +353,45 @@ function placeOrder() {
   // Open WhatsApp
   window.open(whatsappURL, "_blank");
 
-    // reset cart
-    cart = [];
-     popUpModal.classList.remove("visible");
+  // reset cart
+  cart = [];
+  popUpModal.classList.remove("visible");
 
-    // update the page
-    updateCart();
+  // update the page
+  updateCart();
 }
 
-orderBtn.addEventListener("click", placeOrder);
+if (orderBtn) {
+  orderBtn.addEventListener("click", placeOrder);
+}
 
 // shows the cart summary
-cartBriefing.addEventListener("click", () =>{
-  popUpModal.classList.add("visible")
-})
-
-
-
+// cartBriefing.addEventListener("click", () =>{
+//   popUpModal.classList.add("visible")
+// })
 
 // hides the cart summary
-closeModal.addEventListener("click", (e) => {
-  e.stopPropagation();
-  popUpModal.classList.remove("visible");
-  // updateCart();
-});
-
-popUpModal.addEventListener("click", (e) => {
-  if (e.target === popUpModal) {
+if (closeModal) {
+  closeModal.addEventListener("click", (e) => {
+    e.stopPropagation();
     popUpModal.classList.remove("visible");
-  }
-});
+    // updateCart();
+  });
+}
+
+if (popUpModal) {
+  popUpModal.addEventListener("click", (e) => {
+    if (e.target === popUpModal) {
+      popUpModal.classList.remove("visible");
+    }
+  });
+}
+
+// Set footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+//Date Get Methods
+// let today = new Date("2026-09-17T12:34:56")
+// console.log(today);
+
+// console.log(today.getFullYear());

@@ -20,18 +20,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+        <!-- css styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Eagles Tech Textbook Series</title>
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- header -->
     <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
         <div class="container py-3">
             <a href="index.html" class="nav-brand">Eagles <span>Tech</span></a>
             <div class="d-flex align-items-center">
                 <li class="nav-item mx-auto d-block d-lg-none">
-                    <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-count"></span></span>
+                    <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-count">0</span></span>
                 </li>
                 <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav">
@@ -42,31 +45,48 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item ps-3">
-                        <a href="#textbooks" class="nav-link fw-semibold">Explore</a>
+                        <a href="index.html" class="nav-link fw-semibold">Home</a>
                     </li>
                     <li class="nav-item ps-3">
-                        <a href="#how-it-works" class="nav-link fw-semibold">How it Works</a>
+                        <a href="./assets/pages/store.html" class="nav-link fw-semibold">Shop</a>
+                    </li>
+                    <li class="nav-item ps-3 dropdown-col">
+                        <button class="d-flex align-items-center justify-content-between nav-link gap-1 dropdown-btn " data-bs-toggle="collapse"
+                                data-bs-target="#dropdown"
+                            id="dropdown-btn">
+                            <span class="">Pages</span>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="dropDownMenu dropdown-menu" id="dropdown">
+                            <ul class="navbar-nav d-flex flex-column p-4">
+                                <li class="nav-item"><a href="./assets/pages/robotics_kits.html" class="nav-link">AI & Robotics Kits</a></li>
+                                <li class="nav-item"><a href="./assets/pages/reality_kits.html" class="nav-link">Extended Reality Kits</a></li>
+                                <li class="nav-item"><a href="./assets/pages/smart_screen.html" class="nav-link">Smart Screens</a></li>
+                                <li class="nav-item"><a href="./assets/pages/lab_establishment.html" class="nav-link">AI & Robotics Lab Establishment</a>
+                                </li>
+                                <li class="nav-item"><a href="./assets/pages/health_simulation.html" class="nav-link">Health Simulation</a></li>
+                                <li class="nav-item"><a href="./assets/pages/faith_tech_manuals.html" class="nav-link">Faith-Based Tech Manuals</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item ps-3">
-                        <a href="#product-wrapper" class="nav-link fw-semibold">Pricing</a>
+                        <a href="./assets/pages/novel_tech.html" class="nav-link fw-semibold">Tech Novels</a>
                     </li>
-                    <li class="nav-item ps-3">
-                        <a href="#novel" class="nav-link fw-semibold">Novels</a>
-                    </li>
-                    <li><a href="#product-wrapper" class="btn d-block ps-3">Shop Now</a></li>
+                    <li><a href="./assets/pages/store.html" class="btn d-block ps-3">Buy Book</a></li>
 
                     <li class="nav-item ps-3 d-none d-lg-block">
-                        <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-count"></span></span>
+                        <span class="cart-icon"><i class="bi bi-cart3"></i><span class="cart-count">0</span></span>
                     </li>
                 </ul>
             </div>
         </div>
 
     </nav>
-    <!-- END -->
+    <!-- end -->
+
     <main>
         <!-- hero-section -->
-        <section class="hero-section py-5">
+        <section class="hero-section py-5 border-bottom">
             <div class="container pt-lg-5">
                 <div class="row pt-3 pt-lg-5 g-4">
                     <div class="col-lg-7 col-md-12 pt-md-5 ">
@@ -186,7 +206,7 @@
         <!-- end -->
 
         <!-- Robotic_kits_section -->
-        <section class="robotic_kits py-5">
+        <section class="robotic_kits py-3 border-bottom">
             <div class="container py-5">
                 <div class="row ">
                     <div class="col-lg-6 px-2 pb-5 justify-content-center mx-auto">
@@ -230,8 +250,8 @@
         <!-- end -->
 
         <!-- extended_reality_section -->
-        <section class="extended_reality_section">
-            <div class="container">
+        <section class="extended_reality_section pt-5">
+            <div class="container pt-3">
                 <div class="row">
                     <div class="col-lg-8 px-0 py-1 justify-content-center mx-auto">
                         <div class="header d-flex flex-column align-items-center justify-content-center text-center">
@@ -279,7 +299,7 @@
         <!-- end -->
 
         <!-- eagles_smart_screen -->
-        <section class="eagles_smart_screen py-5">
+        <section class="eagles_smart_screen py-5 border-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
@@ -321,7 +341,7 @@
                     </div>
 
                     <div class="col-md-6 d-flex order-1  pt-0 ">
-                        <div class="smart_screen_img pt-0 pt-md-">
+                        <div class="smart_screen_img pt-0">
                             <img src="./assets/images/smart_screen2.jpeg" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -332,7 +352,7 @@
 
         <!-- Eagles_robotics_lab_establishment -->
         <section class="eagles_robotics_lab_establishment py-5">
-            <div class="container">
+            <div class="container pb-2">
                 <div class="row">
                     <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
                         <div class="header d-flex flex-column align-items-center justify-content-center text-center">
@@ -413,57 +433,8 @@
         </section>
         <!-- end -->
 
-        <!-- health_simulation -->
-        <section class="health_simulation py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
-                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
-                            <em class="subtitle">health simulation</em>
-                            <h2 class="section_header text-center pb-2">Immersive Biomedical & Healthcare Traininig</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 px-md-0">
-                                <p class="pb-2 pt-5 desc text-center">
-                                    Bring advanced medical technology into classrooms. <b>Eagles Health Simulation</b>
-                                    integrates AI
-                                    diagnostics, biomedical robotics, and Extended Reality (AR/VR) to train the next
-                                    generation of healthcare
-                                    professionals and biomedical engineers.
-                                </p>
-
-                                <ul class=" ps-5">
-                                    <li class="pb-2">
-                                        <strong>AR Anatomy & Physiology:</strong> Explore interactive 3D human organ
-                                        systems and cellular structures
-                                        using Eagles EXR.
-                                    </li>
-                                    <li class="pb-2">
-                                        <strong>Biomedical Robotics:</strong> Program and simulate robotic surgical
-                                        tools and prosthetic mechanics in a
-                                        risk-free environment.
-                                    </li>
-                                    <li class="pb-2">
-                                        <strong>AI Diagnotics Simulator:</strong> Train machine learning models to
-                                        analyze medical scans and track vital
-                                        signs.
-                                    </li>
-                                    <li class="pb-2">
-                                        <strong>Smart Screen Collaboration:</strong> Display patient case studies and
-                                        live simulation data on the
-                                        <b>Eagles Smart Screen</b> for group learning.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end -->
-
         <!-- novel section -->
-        <section class="novel-section py-5" id="novel">
+        <section class="novel-section pt-3 pb-5 border-bottom" id="novel">
             <div class="container py-4">
                 <div class="row">
                     <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
@@ -551,12 +522,12 @@
         <!-- end -->
 
         <!-- bible_base_AI_robotics_manual -->
-         <section class="bible_base_manual py-5">
+        <section class="bible_base_manual py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 px-2 py-1 justify-content-center mx-auto">
                         <div class="header d-flex flex-column align-items-center justify-content-center text-center">
-                            <em class="subtitle">bible  manual</em>
+                            <em class="subtitle">bible manual</em>
                             <h2 class="section_header text-center pb-2">Bible-Base AI & Robotics Manual</h2>
                             <p class="py-2 desc">
                                 Integrating faith, ethics & innovation in STEM.
@@ -564,14 +535,18 @@
                         </div>
                     </div>
                 </div>
-                <p>Discover how cutting-edge technology aligns with timeless biblical principles. The <b>Eagles Tech Bible-Based AI & Robotics Manual</b>  guides students through building robots and programming artificial intelligence while exploring ethical  stewardship, purpose, and Christian values in modern engineering.</p>
+                <p>Discover how cutting-edge technology aligns with timeless biblical principles. The <b>Eagles Tech
+                        Bible-Based AI & Robotics Manual</b> guides students through building robots and programming
+                    artificial intelligence while exploring ethical stewardship, purpose, and Christian values in modern
+                    engineering.</p>
 
                 <div class="row pt-4 g-4">
                     <div class="col-md-6">
                         <div class="card  p-4">
                             <h3>Faith & Ethical Integration:</h3>
                             <ul class="navbar-nav">
-                                <li>Devotional and thought-provoking reflections pairing tech concepts with biblical stewardship, wisdom, and responsibility.</li>
+                                <li>Devotional and thought-provoking reflections pairing tech concepts with biblical
+                                    stewardship, wisdom, and responsibility.</li>
                             </ul>
                         </div>
                     </div>
@@ -579,7 +554,8 @@
                         <div class="card  p-4">
                             <h3>Hands-on Engineering Projects:</h3>
                             <ul class="navbar-nav">
-                                <li>Step-by-step guides for building robotics kits and AI models grounded in solving real-world  community problems.</li>
+                                <li>Step-by-step guides for building robotics kits and AI models grounded in solving
+                                    real-world community problems.</li>
                             </ul>
                         </div>
                     </div>
@@ -587,7 +563,8 @@
                         <div class="card  p-4">
                             <h3>Interactive AR Schematics:</h3>
                             <ul class="navbar-nav">
-                                <li>Scan manual pages using <b>Eagles EXR</b> to view 3D hardware assembly guides, circuit pathways, and code logic</li>
+                                <li>Scan manual pages using <b>Eagles EXR</b> to view 3D hardware assembly guides,
+                                    circuit pathways, and code logic</li>
                             </ul>
                         </div>
                     </div>
@@ -601,84 +578,49 @@
                     </div>
                 </div>
             </div>
-         </section>
-         <!-- end -->
-
-        <!-- product-wrapper -->
-        <section class="product-wrapper py-5" id="product-wrapper">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-lg-12 px-0 py-1">
-                        <div class="header d-flex flex-column align-items-center justify-content-center text-center">
-                            <div class="logo pb-4"><img src="./assets/images/logo.png" alt="logo"></div>
-                            <h2 class="section_header text-center pb-2">Eagles Tech Textbook Series</h2>
-                            <p>AI & Robotics Education for Tomorrow's Africa</p>
-                            <form method="post">
-                                <input type="search" name="search" id="search"
-                                    placeholder="Search books by title, author, or description..." class="  mb-3">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-row row g-3 justify-content-center" id="products">
-                    <!-- product-items will appear here -->
-                </div>
-
-                <div class="overlay" id="popUp">
-                    <aside class="cart-wrapper p-4">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <h2>Your Cart (<span class="cart-count">0</span>)</h2>
-                            <button class="action-btn closeBtn" id="close-popUp"><i class="bi bi-x"></i></button>
-                        </div>
-
-
-                        <div id="empty-cart" class="empty-cart text-center pt-3">
-                            <img src="./assets/images/illustration-empty-cart.svg" alt="Empty Cart">
-                            <p>Your added items will appear here</p>
-                        </div>
-
-                        <div class="cart-summary " id="cart-summary">
-                            <div class="cart-items " id="cart-items">
-                                <!-- added items will appear here -->
-                            </div>
-
-                            <div class="total-order pt-4">
-                                <span class="d-flex align-items-center justify-content-between">
-                                    <p>Subtotal:</p>
-
-                                    <p>₦<span class="grand-total">55.00</span></p>
-                                </span>
-
-                                <p class=" d-flex align-items-center justify-content-between">
-                                    <span>Shipping</span>
-                                    <span>Free</span>
-                                </p>
-
-                                <span class="d-flex align-items-center  gap-4">
-                                    <h2>Total: <strong> ₦<span class="grand-total">55.00</span></strong></h2>
-
-                                </span>
-
-                            </div>
-
-
-                            <button class="order-button d-block mt-4 text-center" id="placeOrderBtn">
-                                Place Order via WhatsApp
-                            </button>
-                        </div>
-                    </aside>
-                </div>
-
-                <div class="cart-briefing text-center py-3 px-4 shadow" id="cart-briefing">
-                    <h2>Cart Total</h2>
-                    <h3 class="product-price pb-2 d-block">₦<span class="grand-total">7000.00</span></h3>
-                    <h2 class="h2"><span class="cart-count" id="cart-count">0</span> Item</h2>
-                </div>
-            </div>
         </section>
         <!-- end -->
     </main>
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row border-bottom pb-4 g-4">
+                <div class="col-md-6">
+                    <div>
+                        <a href="index.html" class="nav-brand">Eagles <span>Tech</span></a>
+                        <h3 class="py-3">Eagles Academic Research and ICT Hub</h3>
+                        <p>Empowering Africa's Future - One Child at a Time</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="../../index.html">Home</a></li>
+                            <li class="nav-item"><a href="./assets/pages/store.html">Shop</a></li>
+                            <li class="nav-item"><a href="./assets/pages/smart_screen.html">Smart Screens</a></li>
+                            <li class="nav-item"><a href="./assets/pages/robotics_kits.html">Robotics Kits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <h4>Contact Us</h4>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><span>Email: </span><a href="mailto:info@earihub.net">
+                                    info@earihub.net</a></li>
+                            <li class="nav-item"><span>Phone: </span><a href="tel:2348069033090">
+                                    08069033090</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copywright text-center pt-4">© <span class="year" id="year"></span> Eagles Tech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">

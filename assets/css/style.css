@@ -1,168 +1,6 @@
- /* font families */
- @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
-
- /* bootstrap icons */
- @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-
- :root {
-     /* Design System Colors (HSL) */
-     --foreground: #020817;
-     --text-white: #ffffff;
-     --primary: #0f172a;
-     --primary-foreground: #f8fafc;
-     --secondary: #f1f5f9;
-     --secondary-foreground: #0f172a;
-     --muted-foreground: #64748b;
-     --border: #078899c4;
-     /* --border: #466ca0; */
-     --input: #e2e8f0;
-     --radius: 0.5rem;
-     --accent: #2463eb;
-     --success: #16a249;
-     --hero-gradient: linear-gradient(135deg, hsl(221, 83%, 53%) 0%, hsl(222.2, 47.4%, 11.2%) 100%);
-     --space-grotesk: "Sora", serif;
-     --inter: "Inter", system-ui, sans-serif;
-     --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-     --box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
- }
-
- /* universal selector */
- * {
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
-     /* font-family: "inter", system-ui, sans-serif; */
-     font-family: -apple-system, "BlinkMacSystemFont", 'Segoe UI', "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     transition: 0.4s ease-in-out;
- }
-
- /* general styles */
- a {
-     text-decoration: none;
-     color: inherit;
- }
-
- em {
-     font-style: normal;
- }
-
- .subtitle {
-     color: var(--border);
-     text-transform: uppercase;
-     font-size: 14px;
-     padding-bottom: 10px;
-     font-weight: 500;
-     font-family: "Nunito", sans-serif;
- }
-
- .section_label {
-     font-size: 25px;
- }
-
- .section_header {
-     font-size: clamp(1.6em, 5vw, 2.2rem);
-     line-height: 1.2;
-     font-weight: 700;
-     color: var(--primary);
-     font-family: var(--space-grotesk);
- }
-
- .cta-btn {
-     padding: 0.8rem 2rem;
-     background: var(--text-white);
-     border-radius: 50px;
-     text-align: center;
-     font-size: 1rem;
-     color: var(--primary);
-     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-     width: fit-content;
-     font-weight: 500;
-     transition: 0.4s;
-     display: inline-block;
-
- }
-
- .cta-btn:hover {
-     transform: translateY(-3px);
- }
-
- b{
-    font-family: var(--inter);
- }
-
- /* end */
-
- /* HEADER */
- .nav-brand {
-     font-size: 22px;
-     font-weight: 900;
-
-     text-decoration: none;
-     color: var(--text-black);
-     font-family: var(--space-grotesk);
-
-
-     span {
-         color: var(--border);
-         font-family: var(--space-grotesk);
-     }
- }
-
- .nav-item .nav-link {
-     font-size: 16px;
-     color: var(--primary);
-     transition: 0.5s ease;
- }
-
- .nav-item .nav-link:hover {
-     color: var(--border);
- }
-
-
- .navbar-nav .btn {
-     text-decoration: none;
-     font-family: var(--space-grotesk);
-     background: var(--border);
-     font-size: 14px;
-     font-weight: 600;
-     color: white;
-     transition: 0.5s;
- }
-
- .navbar-nav .btn:hover {
-     background: #057d8dc4;
-     /* color: transparent; */
- }
-
- .nav-item .cart-icon {
-     font-size: 25px;
-     font-weight: 800;
-     position: relative;
-     cursor: pointer;
- }
-
- .nav-item .cart-icon .cart-count {
-     position: absolute;
-     top: -5px;
-     right: -8px;
-     width: 20px;
-     height: 20px;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 12px;
-     font-weight: normal;
-     background: var(--border);
-     color: var(--text-white);
- }
-
- /* END */
-
- /* hero-section */
+/* hero-section */
  .hero-section {
      background: var(--secondary);
-     /* background: var(--hero-gradient); */
  }
 
  .hero-title {
@@ -261,6 +99,12 @@
 
  /* end */
 
+ /* robotic_kits */
+ .robotic_kits{
+    background: var(--secondary);
+ }
+/* end */
+
  /* extended_reality_section */
  .extended_reality_section {
      background: var(--light-gray);
@@ -302,6 +146,9 @@
  /* end */
 
  /* eagles_smart_screen */
+ .eagles_smart_screen{
+    background: var(--secondary);
+ }
  .eagles_smart_screen .smart_screen_img img {
      height: 350px;
      border-radius: var(--radius);
@@ -347,6 +194,9 @@
  /* end */
 
  /* novel-section */
+ .novel-section{
+    background: var(--secondary);
+ }
  .novel-section .img-bg-design_1 {
      position: relative;
      border-radius: 50px;
@@ -431,12 +281,6 @@
      font-family: var(--inter);
  }
 
- /* .novel-section ul .circle-disign {
-     position: static;
-     background: #000;
-     width: 300px;
-     height: 100px;
- } */
 
  .novel-section .circle-design2 .circle {
      width: 18px;
@@ -581,301 +425,6 @@
 
  .bible_base_manual h3 {
      font-size: 20px;
- }
-
- /* end */
-
- /* product-wrapper */
- .product-wrapper {
-     position: relative;
- }
-
- .product-wrapper .logo img {
-     width: 100%;
-     max-width: 120px;
-     min-width: 96px;
-     height: 100%;
-     max-height: 120px;
-     min-height: 96px;
- }
-
- .product-wrapper p {
-     font-size: 20px;
-     color: var(--muted-foreground);
-     font-weight: normal;
- }
-
- .product-wrapper input[type="search"] {
-     width: 420px;
-     padding: 8px 20px;
-     border-radius: var(--radius);
-     border: 1px solid var(--secondary);
- }
-
- @media (max-width: 430px) {
-     .product-wrapper input[type="search"] {
-         width: 320px;
-     }
- }
-
- @media (max-width: 320px) {
-     .product-wrapper input[type="search"] {
-         width: 300px;
-     }
- }
-
-
- .product-item:hover {
-     box-shadow: 0px 5px 10px 5px var(--input);
- }
-
- .product-item .product-img {
-     width: 100%;
-     height: 300px;
-     overflow: hidden;
- }
-
- .product-item .product-img img {
-     width: 100%;
-     height: 100%;
- }
-
- .product-item .product-title {
-     font-size: 20px;
-     font-weight: 600;
-     color: var(--primary);
-
- }
-
- .product-item em {
-     font-size: 18px;
-     font-weight: 500;
-     color: var(--muted-foreground);
-
- }
-
- .product-item .product-text {
-     font-size: 16px;
-     font-weight: 500;
-     color: var(--muted-foreground);
-
- }
-
- .product-item .product-price {
-     font-size: 25px;
-     font-weight: 700;
-     color: var(--primary);
-
- }
-
- .product-item .addToCart-btn {
-     font-size: 16px;
-     font-weight: 500;
-     color: var(--text-white);
-     background: var(--primary);
-     border-radius: var(--radius);
-     padding: 8px 20px;
-     width: 90%;
-     border: none;
-     cursor: pointer;
-     margin: auto;
- }
-
- .quantity-controls {
-     margin: auto;
-     width: 90%;
-     display: flex;
-     gap: 20px;
-     align-items: center;
-     justify-content: center;
-     border-radius: var(--radius);
-     padding: 8px 20px;
- }
-
- .quantity-controls {
-     background: rgba(7, 136, 153, 0.767);
-     color: var(--text-white);
- }
-
- .action-btn {
-     width: 23px;
-     height: 23px;
-     font-size: 20px;
-     border-radius: 50%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: var(--text-white);
-     border: 1px solid currentColor;
-     background: transparent;
-     cursor: pointer;
-
-     img {
-         width: 13px;
-         height: 13px;
-     }
- }
-
- .decrement-btn img {
-     height: 3px;
- }
-
- .overlay {
-     background: #0000004d;
-     width: 100%;
-     height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: end;
-     position: fixed;
-     backdrop-filter: blur(3px);
-     top: 0;
-     right: -100%;
-     z-index: 9999;
-     cursor: pointer;
-     visibility: hidden;
-     opacity: 0;
-     transition: 0.3s ease-in-out;
- }
-
- .visible {
-     visibility: visible;
-     opacity: 1;
-     right: 0;
- }
-
- .cart-wrapper {
-     width: 100%;
-     max-width: 400px;
-     background: rgb(255, 255, 255);
-     height: 100vh;
-     border-radius: var(--radius);
- }
-
- .cart-wrapper h2 {
-     font-size: 28px;
-     font-weight: 700;
-     font-family: var(--inter);
- }
-
- .cart-wrapper .closeBtn {
-     font-size: 28px;
-     border: none;
-     color: var(--primary);
- }
-
- .cart-wrapper .empty-cart p {
-     font-family: var(--inter);
-     font-size: 15px;
- }
-
- .cart-summary .cart-items {
-     overflow-y: scroll;
-     height: 100%;
-     max-height: 400px;
-
-     cursor: grab;
- }
-
- .cart-items::-webkit-scrollbar {
-     display: none;
- }
-
- .cart-summary .cart-item-img img {
-     width: 80px;
-     height: 80px;
-     border-radius: var(--radius);
- }
-
- .cart-summary .cart-item {
-     display: flex;
-     align-items: center;
-     gap: 20px;
- }
-
- .cart-item .cart-item-name {
-     font-family: var(--inter);
-     font-size: 15px;
-     font-weight: 600;
-     color: var(--primary);
- }
-
- .cart-item h4 {
-     font-family: var(--inter);
-     font-size: 18px;
-     font-weight: 600;
-     color: var(--primary);
-     padding-top: 10px;
- }
-
- .cart-items .action-btn {
-     border: 1px solid var(--primary);
-     color: var(--primary);
- }
-
- .cart-summary .total-order p {
-     font-size: 16px;
-     color: var(--foreground);
-     font-weight: normal;
-     font-family: var(--inter);
- }
-
- .cart-summary .total-order h2 {
-     font-size: 25px;
-     color: var(--foreground);
-     font-weight: normal;
-     font-family: var(--inter);
- }
-
- .order-button {
-     width: 90%;
-     padding: 15px 20px;
-     font-size: 16px;
-     font-weight: 600;
-     font-family: var(--inter);
-     border: none;
-     border-radius: var(--radius);
-     background: var(--foreground);
-     color: var(--text-white);
-     margin: auto;
-     transition: 0.4s ease-in-out;
- }
-
- .order-button:hover {
-     background: rgba(7, 136, 153, 0.767);
-     ;
- }
-
- .cart-briefing {
-     width: fit-content;
-     background: #000;
-     color: #ffffff;
-     border-radius: var(--radius);
-     position: fixed;
-     top: 110px;
-     right: 20px;
-     z-index: 111;
-     cursor: pointer;
- }
-
- .cart-briefing h2 {
-     font-size: 18px;
-     font-family: var(--inter);
-
- }
-
- .cart-briefing .product-price {
-     font-size: 25px;
-     font-weight: 700;
-     line-height: 1;
-     font-family: var(--inter);
- }
-
- .cart-briefing .h2 {
-     font-size: 14px;
-     color: var(--secondary);
-     font-weight: normal;
-     font-family: var(--inter);
  }
 
  /* end */
