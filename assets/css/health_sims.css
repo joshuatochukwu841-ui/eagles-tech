@@ -1,8 +1,42 @@
-h4{
-    color: black;
+/* hero-section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/health_sim\ \(2\).jpeg")center/cover;
 }
+
+.hero-section .hero-title {
+    color: var(--text-white);
+}
+
+.hero-section .hero-text {
+    color: var(--secondary);
+}
+/* end */
+
+/* health_simulation */
+
 
  .health_simulation .health_sim_img img {
      height: 350px;
      border-radius: var(--radius);
+ }
+
+ @media (max-width:991px) {
+    .health_simulation .health_sim_img img {
+         height: auto;
+     }
+ }
+
+ .health_simulation .contents {
+     
+     h3{
+        font-size: 25px;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+     }
+
+         h4 {
+             color: var(--primary);
+             font-size: 19px;
+             font-weight: 500;
+         }
  }

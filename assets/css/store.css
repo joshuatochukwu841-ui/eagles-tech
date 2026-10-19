@@ -139,21 +139,18 @@
      height: 100vh;
      display: flex;
      align-items: center;
-     justify-content: center;
+     justify-content: end;
      position: fixed;
      backdrop-filter: blur(3px);
      top: 0;
-     right: 0;
+     right: -500%;
      z-index: 9999;
      cursor: pointer;
-     visibility: hidden;
-     opacity: 0;
      transition: 0.3s ease-in-out;
+     padding-top:40px;
  }
 
  .visible {
-     visibility: visible;
-     opacity: 1;
      right: 0;
  }
 
