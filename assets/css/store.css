@@ -1,3 +1,21 @@
+/* navigation-col */
+.navigation-col {
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: 500;
+    color: var(--gray-text);
+}
+
+.navigation-col .home {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.navigation-col .current_page{
+    color: var(--muted-foreground);
+}
+/* end */
+
 /* product-wrapper */
  .product-wrapper {
      position: relative;

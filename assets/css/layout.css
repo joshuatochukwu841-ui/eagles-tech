@@ -131,8 +131,8 @@
 
  footer p {
      font-family: var(--inter);
-     font-size: 15px;
-     color: var(--input);
+     font-size: 13px;
+     color: #c9ced4;    
  }
 
  footer a {

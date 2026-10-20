@@ -1,5 +1,6 @@
 // PRODUCT  SECTION
 const productRow = document.getElementById("products");
+const productSearch = document.getElementById("filter-items");
 const popUpModal = document.getElementById("popUp");
 const closeModal = document.getElementById("close-popUp");
 const cartCount = document.querySelectorAll(".cart-count");
@@ -122,9 +123,17 @@ const loadProducts = [
 function displayProducts() {
   if (!productRow) return;
 
-  productRow.innerHTML = loadProducts
+  const matchingProducts = loadProducts
+    .map((product, index) => ({ product, index }))
+    .filter(({ product }) =>
+      `${product.name} ${product.producer} ${product.text}`
+        .toLowerCase()
+        .includes(searchTerm.trim().toLowerCase()),
+    );
+
+  productRow.innerHTML = matchingProducts
     .map(
-      (product, index) => `
+      ({ product, index }) => `
     <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card product-item p-3">
                      <div class="product-img"><img src="${product.image}" alt="primary 1"></div>
@@ -139,13 +148,24 @@ function displayProducts() {
     </div>
     `,
     )
-    .join("");
+    .join("") || '<p class="text-center">No products found.</p>';
 
   console.log(loadProducts);
 }
 
 if (hasStoreUi) {
   displayProducts();
+}
+
+if (productSearch) {
+  productSearch.addEventListener("input", () => {
+    searchTerm = productSearch.value;
+    displayProducts();
+  });
+
+  productSearch.closest("form")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
 }
 
 // show either the "add to cart" or the "quantity controls"
@@ -388,7 +408,8 @@ if (popUpModal) {
 }
 
 // Set footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year")
+year.textContent = new Date().getFullYear();
 
 //Date Get Methods
 // let today = new Date("2026-09-17T12:34:56")
