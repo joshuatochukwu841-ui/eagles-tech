@@ -20,16 +20,6 @@ const hasStoreUi = Boolean(
   orderBtn,
 );
 
-console.log(
-  productRow,
-  cartCount,
-  emptyCart,
-  cartSummary,
-  cartItems,
-  grandTotal,
-  orderBtn,
-);
-
 // array of cart items
 let cart = [];
 let searchTerm = "";
@@ -172,7 +162,6 @@ if (productSearch) {
 function getProductButton(index) {
   // get the item from the cart array that matches the index of the product
   const item = cart.find((item) => item.index === index);
-  //   console.log(item);
 
   // if the item is not in the cart, show the "add to cart" button
   if (!item) {
@@ -385,11 +374,6 @@ if (orderBtn) {
   orderBtn.addEventListener("click", placeOrder);
 }
 
-// shows the cart summary
-// cartBriefing.addEventListener("click", () =>{
-//   popUpModal.classList.add("visible")
-// })
-
 // hides the cart summary
 if (closeModal) {
   closeModal.addEventListener("click", (e) => {
@@ -410,9 +394,3 @@ if (popUpModal) {
 // Set footer year
 const year = document.getElementById("year")
 year.textContent = new Date().getFullYear();
-
-//Date Get Methods
-// let today = new Date("2026-09-17T12:34:56")
-// console.log(today);
-
-// console.log(today.getFullYear());

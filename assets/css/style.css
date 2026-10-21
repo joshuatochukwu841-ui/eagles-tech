@@ -438,6 +438,23 @@ h3 {
 
 /* end */
 
+/* service-section */
+.service-section{
+        background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/services.webp")center/cover;
+}
+
+.service-section .hero-title {
+    color: var(--text-white);
+    font-family: var(--space-grotesk);
+}
+
+.service-section .hero-text {
+    color: var(--secondary);
+    font-family: var(--inter);
+    font-size: 16px;
+}
+/* end */
+
 /* download_section */
 .download_section {
     background: var(--light-gray);
