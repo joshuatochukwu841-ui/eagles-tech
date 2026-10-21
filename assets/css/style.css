@@ -443,13 +443,12 @@ h3 {
         background: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/services.webp")center/cover;
 }
 
-.service-section .service-title {
+.service-section .hero-title {
     color: var(--text-white);
-    font-weight: 700;
     font-family: var(--space-grotesk);
 }
 
-.service-section .service-text {
+.service-section .hero-text {
     color: var(--secondary);
     font-family: var(--inter);
     font-size: 16px;
